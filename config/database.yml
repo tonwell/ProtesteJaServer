@@ -12,7 +12,7 @@
 #       Install PostgreSQL and put its /bin directory on your path.
 #
 # Configure Using Gemfile
-# gem 'pg'
+ gem 'pg'
 #
 development:
   adapter: postgresql
@@ -66,6 +66,4 @@ production:
   username: ntatfpuygvaqlc
   password: anDeQIW_LrYMamGevisQnqPBvS
   host: ec2-54-221-196-140.compute-1.amazonaws.com
-
   port: 5432
-ruby '2.0.0'
