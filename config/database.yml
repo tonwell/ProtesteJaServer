@@ -68,3 +68,4 @@ production:
   host: ec2-54-221-196-140.compute-1.amazonaws.com
 
   port: 5432
+ruby '2.0.0'
