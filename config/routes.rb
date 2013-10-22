@@ -1,4 +1,6 @@
 Androidlista::Application.routes.draw do
+  resources :protestos
+
   get "welcome/index"
   root 'welcome#index'
   resources :pessoas

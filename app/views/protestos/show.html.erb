@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Pessoa:</strong>
+  <%= @protesto.pessoa %>
+</p>
+
+<p>
+  <strong>Descricao:</strong>
+  <%= @protesto.descricao %>
+</p>
+
+<%= link_to 'Edit', edit_protesto_path(@protesto) %> |
+<%= link_to 'Back', protestos_path %>

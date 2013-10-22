@@ -1,0 +1,29 @@
+<h1>Listing protestos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Pessoa</th>
+      <th>Descricao</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @protestos.each do |protesto| %>
+      <tr>
+        <td><%= protesto.pessoa %></td>
+        <td><%= protesto.descricao %></td>
+        <td><%= link_to 'Show', protesto %></td>
+        <td><%= link_to 'Edit', edit_protesto_path(protesto) %></td>
+        <td><%= link_to 'Destroy', protesto, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Protesto', new_protesto_path %>
